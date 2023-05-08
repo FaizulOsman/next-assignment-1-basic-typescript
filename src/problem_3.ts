@@ -1,5 +1,8 @@
+// array of strings
 const arrayOfStr: string[] = ["Abul", "Babul", "Cabul", "Dabul", "Ebul"];
-function GenericFunction2<T>(...param: T[]): T[] {
+// a TypeScript program that uses a generic function
+function ReverseGenericFunction<T>(...param: T[]): T[] {
+  // reverse an array of strings
   return param.reverse();
 }
-console.log(GenericFunction2(...arrayOfStr));
+console.log(ReverseGenericFunction(...arrayOfStr));
